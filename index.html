@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+  <h2>Students</h2>          
+  <table class="table table-hover" id="mainTable">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="firstRow">
+        <td class="first">LeBron</td>
+        <td class="last">James</td>
+        <td class="email">lbj@gmail.com</td> 
+        <td><button type="button" class="btn btn-danger deleteButton">X</button></td>
+
+      </tr>
+      <tr>
+        <td class="first">Dr.</td>
+        <td class="last">Dre</td>
+        <td class="email">dr.dre@gmail.com</td>
+        <td><button type="button" class="btn btn-danger deleteButton">X</button></td>
+      </tr>
+      <tr>
+        <td class="first">Yo</td>
+        <td class="last">Momma</td>
+        <td class="email">yomomma@gmail.com</td>
+        <td><button type="button" class="btn btn-danger deleteButton">X</button></td>
+      </tr>
+      <tr id="addRow">
+        <td> 
+          <input type="text" class="new-input" id="First Name" placeholder="First Name" value="">
+        </td>
+        <td>
+           <input type="text" class="new-input" id="Last Name" placeholder="Last Name" value="">
+        </td>
+        <td>
+          <input type="text" class="new-input" id="Email" placeholder="Email" value="">
+        </td>
+        <td><button type="button" class="btn btn-success" id="addButton">+</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script type="text/javascript" src="js/deleterow.js"></script>
+<script type="text/javascript" src="js/firstrowdelete.js"></script>
+<script type="text/javascript" src="js/addrow.js"></script>
+
+</body>
+</html>
